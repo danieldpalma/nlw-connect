@@ -13,7 +13,7 @@ public class UsersController : ControllerBase
     [HttpPost]
     [ProducesResponseType(typeof(ResponseRegisterUserJson), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
-    public IActionResult Create(RequestUserJson request)
+    public IActionResult Register(RequestUserJson request)
     {
         try
         {
