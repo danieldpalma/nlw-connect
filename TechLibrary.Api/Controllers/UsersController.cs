@@ -30,11 +30,11 @@ public class UsersController : ControllerBase
                 Errors = ex.GetErrorMessages()
             });
         }
-        catch(System.Exception ex)
+        catch
         {
             return StatusCode(StatusCodes.Status500InternalServerError, new ResponseErrorMessagesJson
             {
-                Errors = ["Erro desconhecido.", ex.Message]
+                Errors = ["Erro desconhecido."]
             });
         }
 
