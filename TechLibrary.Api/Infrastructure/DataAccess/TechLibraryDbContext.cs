@@ -11,6 +11,6 @@ public class TechLibraryDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=C:\\dev\\NLW Connect\\TechLibraryDb.db");
+        optionsBuilder.UseSqlite("Data Source=C:\\dev\\NLW Connect\\TechLibrary\\TechLibraryDb.db");
     }
 }
